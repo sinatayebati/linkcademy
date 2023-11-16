@@ -6,7 +6,7 @@ import Header from './Header';
 function App() {
   return (
     <div className="app">
-      <h1>Lets build linkcademy</h1>
+
 
       {/* Header */}
       <Header />
