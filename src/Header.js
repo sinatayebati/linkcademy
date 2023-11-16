@@ -6,10 +6,9 @@ import SearchIcon from '@mui/icons-material/Search';
 function Header() {
   return (
     <div className='header'>
-        <h1>This is the header</h1>
 
         <div className='header__left'>
-          <img src="" alt="" />
+          <img src={require('./assets/LinkAcademy-logos.jpg')} alt="" />
 
           <div className='header__search'>
             <SearchIcon />
