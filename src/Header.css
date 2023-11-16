@@ -12,6 +12,7 @@
 
 .header__left {
     display: flex;
+    align-items: center;
 }
 
 .header__left > img {
@@ -38,4 +39,5 @@
 
 .header__right {
     display: flex;
+    align-items: center;
 }
