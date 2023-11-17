@@ -4,8 +4,8 @@
     display: flex;
     justify-content: space-evenly;
     border-bottom: 0.1px solid lightgray;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     width: 100%;
     z-index: 999;
 }
@@ -20,19 +20,17 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
-    order: 1;
+    /* box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%); */
     justify-self: center;
-    width: 70px;
-    height: 70px;
-    animation: profile__animate 8s ease-in-out infinite 1s;
+    width: 80px;
+    height: 80px;
 }
 
-.header__left > img {
+/* .header__left > img {
     object-fit: contain;
     height: 70px;
     margin-right: 10px;
-}
+} */
 
 .header__search {
     padding: 10px;
