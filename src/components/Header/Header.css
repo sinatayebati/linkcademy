@@ -15,6 +15,19 @@
     align-items: center;
 }
 
+.home__img {
+    background: url(../../assets/logo-02/LinkAcademy-logos_transparent.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+    order: 1;
+    justify-self: center;
+    width: 70px;
+    height: 70px;
+    animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
 .header__left > img {
     object-fit: contain;
     height: 70px;

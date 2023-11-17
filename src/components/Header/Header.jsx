@@ -10,7 +10,8 @@ function Header() {
     <div className='header'>
 
         <div className='header__left'>
-          <img src={require('./assets/logo-02/LinkAcademy-logos_transparent.png')} alt="" />
+          {/* <img src={require('./assets/logo-02/LinkAcademy-logos_transparent.png')} alt="" /> */}
+          <div className="home__img"></div>
 
           <div className='header__search'>
             <SearchIcon />
