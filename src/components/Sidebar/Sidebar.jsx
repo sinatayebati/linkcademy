@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Sidebar.css";
 import { Avatar } from '@mui/material';
-import AboutImg from "../../assets/avatar/about2.png";
+import AboutImg from "../../assets/avatar/background.jpeg";
 
 function Sidebar() {
   return (

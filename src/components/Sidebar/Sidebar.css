@@ -1,5 +1,5 @@
 .sidebar {
-    position: sticky;
+    position: sticky;;
     top: 80px;
     flex: 0.2;
     border-radius: 10px;
@@ -26,5 +26,26 @@
 .sidebar__top > img {
     margin-bottom: -20px;
     width: 100%;
-    height: auto;
+    height: 60px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
 }
+
+.sidebar__stat {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar__stat > p {
+    color: gray;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sidebar__statNumber {
+    font-weight: bold;
+    color: #0a66c2 !important;
+}
+
