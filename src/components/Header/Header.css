@@ -16,7 +16,7 @@
 }
 
 .home__img {
-    background: url(../../assets/logo-02/LinkAcademy-logos_transparent.png);
+    background: url(../../assets/logo-01/LinkAcademy-logos_black.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -25,12 +25,6 @@
     width: 80px;
     height: 80px;
 }
-
-/* .header__left > img {
-    object-fit: contain;
-    height: 70px;
-    margin-right: 10px;
-} */
 
 .header__search {
     padding: 10px;
