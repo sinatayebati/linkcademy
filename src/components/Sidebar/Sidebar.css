@@ -1,5 +1,5 @@
 .sidebar {
-    position: sticky;;
+    position: sticky;
     top: 80px;
     flex: 0.2;
     border-radius: 10px;
@@ -67,3 +67,17 @@
     color: #0a66c2 !important;
 }
 
+.sidebar__bottom {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.sidebar__recentItem {
+    display: flex;
+    font-size: 13px;
+    color: gray;
+}
