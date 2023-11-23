@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Feed.css';
 import CreateIcon from '@mui/icons-material/Create';
 import InputOption from './InputOption';
@@ -9,6 +9,8 @@ import CalendarViewDayIcon from '@mui/icons-material/CalendarViewDay';
 import Post from './Post';
 
 function Feed() {
+  const [posts, setPosts] = useState([]);
+
   return (
     <div className='feed'>
       <div className="feed__inputContainer">
@@ -28,7 +30,12 @@ function Feed() {
       </div>
 
       {/* Posts */}
-      <Post name="Sina Tayebati"
+      {posts.map((post) => {
+        <Post />
+      })}
+
+      <Post
+      name="Sina Tayebati"
       description="this is a test"
       message="This works"
       />
