@@ -22,7 +22,7 @@ function Feed() {
           <InputOption Icon={ImageIcon} title='Photo' color="#70B5F9"/>
           <InputOption Icon={SubscriptionsIcon} title='Video' color="#E7A33E"/>
           <InputOption Icon={EventNoteIcon} title='Event' color="#C0CBCD"/>
-          <InputOption Icon={CalendarViewDayIcon} title='Write article' color="#7FC15E"/>
+          <InputOption Icon={CalendarViewDayIcon} title='Write' color="#7FC15E"/>
         </div>
       </div>
     </div>
