@@ -1,5 +1,7 @@
 .feed {
-    flex: 0.6;
+    flex-grow: 0; /* Set to 0 to disable automatic sizing */
+    flex-shrink: 0; /* Disable shrinking */
+    flex-basis: 60%; /* Set the initial size to 60% */
     margin: 0 20px;
 }
 
@@ -9,4 +11,13 @@
     padding-bottom: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+.feed__input {
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    display: flex;
+    padding: 10px;
+    color: gray;
+    padding-left: 15px;
 }

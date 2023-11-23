@@ -1,7 +1,9 @@
 .sidebar {
     position: sticky;
     top: 80px;
-    flex: 0.2;
+    flex-grow: 0; /* Set to 0 to disable automatic sizing */
+    flex-shrink: 0; /* Disable shrinking */
+    flex-basis: 20%; /* Set the initial size to 20% */
     border-radius: 10px;
     text-align: center;
     height: fit-content;

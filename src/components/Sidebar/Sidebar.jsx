@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Sidebar.css";
+import './Sidebar.css';
 import { Avatar } from '@mui/material';
 import AboutImg from "../../assets/avatar/background.jpeg";
 
