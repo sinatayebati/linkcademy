@@ -30,7 +30,6 @@
 .feed__input > form > input {
     border: none;
     flex: 1;
-    /* margin-left: 10px;*/
     margin-left: 10px;
     outline-width: 0;
     font-weight: 600;
