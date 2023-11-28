@@ -14,15 +14,15 @@ function Feed() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    db.collection("posts").onSnapshot(snapshot => (
-      setPosts(snapshot.docs.map(doc => (
-        {
+    db.collection("posts").onSnapshot((snapshot) =>
+      setPosts(
+        snapshot.docs.map((doc) => ({
           id: doc.id,
           data: doc.data(),
-        }
-      )))
-    ))
-  }, [])
+        }))
+      )
+    );
+  }, []);
 
   const sendPost = (e) => {
     e.preventDefault();
