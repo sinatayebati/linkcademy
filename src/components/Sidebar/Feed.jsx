@@ -35,8 +35,8 @@ function Feed() {
       message: input,
       photoUrl: '',
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-    })
-  }
+    });
+  };
 
   return (
     <div className='feed'>
@@ -44,8 +44,8 @@ function Feed() {
         <div className="feed__input">
             <CreateIcon />
             <form>
-                <input value={input} onChange={e => setInput(e.target.value)} type="text" />
-                <button onClick={sendPost} type='submit'>Send</button>
+              <input value={input} onChange={e => setInput(e.target.value)} type="text" />
+              <button onClick={sendPost} type='submit'>Send</button>
             </form>
         </div>
         <div className="feed__inputOptions">
@@ -57,16 +57,16 @@ function Feed() {
       </div>
 
       {/* Posts */}
-      {posts.map(({ id, data: { name, description, message, photoUrl} }) => {
-        <post 
+      {posts.map(({ id, data: { name, description, message, photoUrl } }) => (
+        <Post 
           key={id}
           name={name}
           description={description}
           message={message}
           photoUrl={photoUrl}
         />
-      })}
-      
+      ))}
+
     </div>
   )
 }
