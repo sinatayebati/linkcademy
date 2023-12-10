@@ -57,15 +57,16 @@ function Feed() {
       </div>
 
       {/* Posts */}
-      {posts.map((post) => {
-        <Post />
+      {posts.map(({ id, data: { name, description, message, photoUrl} }) => {
+        <post 
+          key={id}
+          name={name}
+          description={description}
+          message={message}
+          photoUrl={photoUrl}
+        />
       })}
-
-      <Post
-      name="Sina Tayebati"
-      description="this is a test"
-      message="This works"
-      />
+      
     </div>
   )
 }
