@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import Profile from "../../assets/avatar/about2.png";
+import logo from "../../assets/logo-02/LinkAcademy-logos_transparent.png";
 import SearchIcon from '@mui/icons-material/Search';
 import HeaderOption from './HeaderOption';
 import HomeIcon from '@mui/icons-material/Home';
@@ -8,12 +8,12 @@ import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import { useDispatch } from 'react-redux';
-import { logout } from '../../features/userSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { logout, selectUser } from '../../features/userSlice';
 import { auth } from '../../firebase';
 
 function Header() {
-
+  const user = useSelector(selectUser)
   const dispatch = useDispatch();
   const logoutOfApp = () => {
     dispatch(logout())
@@ -24,8 +24,7 @@ function Header() {
     <div className='header'>
 
         <div className='header__left'>
-          {/* <img src={require('./assets/logo-02/LinkAcademy-logos_transparent.png')} alt="" /> */}
-          <div className='home__img'></div>
+          <img src={logo} className='home__img' alt="" />
 
           <div className='header__search'>
             <SearchIcon />
@@ -39,7 +38,7 @@ function Header() {
           <HeaderOption Icon={BusinessCenterIcon} title="Jobs"/>
           <HeaderOption Icon={ChatIcon} title="Chat"/>
           <HeaderOption Icon={NotificationsIcon} title="Notifications"/>
-          <HeaderOption avatar={Profile} title="Me" onClick={logoutOfApp}/>
+          <HeaderOption avatar={true} title="Me" onClick={logoutOfApp}/>
         </div>
     </div>
   )
