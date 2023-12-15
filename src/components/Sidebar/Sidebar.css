@@ -1,6 +1,6 @@
 .sidebar {
     position: sticky;
-    top: 80px;
+    top: 100px;
     flex-grow: 0; /* Set to 0 to disable automatic sizing */
     flex-shrink: 0; /* Disable shrinking */
     flex-basis: 20%; /* Set the initial size to 20% */
