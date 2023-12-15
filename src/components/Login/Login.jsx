@@ -28,14 +28,17 @@ function Login() {
         photoURL: profilePic,
       })
       .then(() => {
-        dispatch(login({
-          email: userAuth.user.email,
-          uid: userAuth.user.uid,
-          displayName: name,
-          photoUrl: profilePic,
-        }))
-      })
+        dispatch(
+          login({
+            email: userAuth.user.email,
+            uid: userAuth.user.uid,
+            displayName: name,
+            photoUrl: profilePic,
+          })
+        );
+      });
     })
+    .catch((error) => alert(error));
   };
 
   return (
