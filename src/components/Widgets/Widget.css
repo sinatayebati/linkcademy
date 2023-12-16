@@ -8,3 +8,15 @@
     height: fit-content;
     padding-bottom: 10px;
 }
+
+.widgets__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.widgets__header > h2 {
+    font-size: 16px;
+    font-weight: 400
+}
