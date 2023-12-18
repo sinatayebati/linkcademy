@@ -37,3 +37,20 @@
     color: #f0601d;
     margin-right: 5px;
 }
+
+.widgets__articleleft > .MuiSvgIcon-root {
+    font-size: 15px;
+}
+
+.widgets__articleright {
+    flex: 1;
+}
+
+.widgets__articleright > h4 {
+    font-size: 14px;
+}
+
+.widgets__articleright > p {
+    font-size: 12px;
+    color: gray;
+}
