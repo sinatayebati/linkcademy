@@ -1,7 +1,9 @@
 .widgets {
     position: sticky;
     top: 100px;
-    flex: 0.2;
+    flex-grow: 0; /* Set to 0 to disable automatic sizing */
+    flex-shrink: 0; /* Disable shrinking */
+    flex-basis: 20%; /* Set the initial size to 60% */
     background-color: white;
     border-radius: 10px;
     border: 1px solid lightgray;
@@ -19,4 +21,19 @@
 .widgets__header > h2 {
     font-size: 16px;
     font-weight: 400
+}
+
+.widgets__article {
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.widgets__article:hover {
+    background-color: whitesmoke;
+}
+
+.widgets__articleleft {
+    color: #f0601d;
+    margin-right: 5px;
 }
