@@ -20,6 +20,15 @@
 - Auto authenticate user on refresh
 - Sign Out
 
+# Technologies Used
+- React
+- Redux
+- Node
+- Firebase
+- Mongo DB Cluster
+- Material UI
+- React Flip Move
+
 # How to build your own..?
 1. Clone this repo
 1. Install all the dependencies
