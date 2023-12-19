@@ -1,46 +1,86 @@
-# Getting Started with Create React App and Redux
+# LinkAcademy (a LinkedIn clone)
+## Built using React JS, Redux, Firebase & Material-UI. This is a simple clone project with limited functionality.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+<p align="center">
+    <img src="src/assets/docs/Screenshot 2023-12-18 at 7.11.34 PM.png"
+    width = 400px
+    >
+</p>
+<p align="center">
+<img src="src/assets/docs/Screenshot 2023-12-18 at 7.11.19 PM.png"
+    width = 400px
+    >
+</p>
 
-## Available Scripts
+# Features and Fuctionality
+- Register and Login using Google (Firebase Authentication)
+- Add profile pictures using photo URL
+- Create a new post
+- Realtime update posts
+- Auto authenticate user on refresh
+- Sign Out
 
-In the project directory, you can run:
+# How to build your own..?
+1. Clone this repo
+1. Install all the dependencies
+    ```bash
+    npm i
+    ```
+1. Setup Firebase
 
-### `npm start`
+    - Create Firebase account
+    - Create a new project
+    - Create a web app for that
+    - Copy your config from there
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+        - Select config option
+        - Paste those config inside firebase/config.js file
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    - Setup authentication using Google
 
-### `npm test`
+1. Tweak code as you like
+1. Let's build the optimized version
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```bash
+    npm run build
+    ```
 
-### `npm run build`
+1. **Now for hosting on Firebase lets config Firebase locally**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    - Install Firebase CLI
+    - Login to Firebase
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+        ```bash
+        firebase login
+        ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - Initialize Firebase
 
-### `npm run eject`
+        ```bash
+        firebase init
+        ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    - Select hosting in the menu
+    - Select your respective project from the list
+    - Select 'build' as your hosting directory and other options as you want
+    - Let's deploy our clone and make it live
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+        ```bash
+        firebase deploy
+        ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**That's it our clone is up and running share it now**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Future Plans
 
-## Learn More
+-   Might add more login methods
+-   Post deleting functionality
+-   Post like functionality
+-   Add comments on post
+-   Private chat
+-   Direct photo upload
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**_NOTE: PLEASE LET ME KNOW IF YOU DISCOVERED ANY BUG OR YOU HAVE ANY SUGGESTIONS_**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Licence
+MIT
